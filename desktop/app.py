@@ -7,7 +7,7 @@ from PyQt5.QtGui import (
     QIcon, QPainter, QPainterPath, QRegion,
     QPixmap, QColor, QLinearGradient, QBrush,
 )
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import QSize, Qt
 from os.path import join, exists
 from PyQt5.uic import loadUi
 
@@ -67,13 +67,25 @@ class MainWindow(QFrame):
         icon = QPixmap(50, 50)
         icon.load(join(self.path_icons, "min_size_logo.png"))
         self.label_icon_app.setPixmap(icon)
+        self.label_icon_app.setScaledContents(True)
+        self.label_icon_app.setFixedSize(50, 48)
 
         # Socials
         self.btn_youtube.clicked.connect(lambda: open_link('youtube'))
+        self.btn_youtube.setIcon(QIcon(join(self.path_icons, "socials/youtube.png")))
+        self.btn_youtube.setIconSize(QSize(35, 35))
         self.btn_github.clicked.connect(lambda: open_link('github'))
+        self.btn_github.setIcon(QIcon(join(self.path_icons, "socials/github.png")))
+        self.btn_github.setIconSize(QSize(35, 35))
         self.btn_facebook.clicked.connect(lambda: open_link('facebook'))
+        self.btn_facebook.setIcon(QIcon(join(self.path_icons, "socials/facebook.png")))
+        self.btn_facebook.setIconSize(QSize(35, 35))
         self.btn_twitter.clicked.connect(lambda: open_link('twitter'))
+        self.btn_twitter.setIcon(QIcon(join(self.path_icons, "socials/twitter.png")))
+        self.btn_twitter.setIconSize(QSize(35, 35))
         self.btn_instagram.clicked.connect(lambda: open_link('instagram'))
+        self.btn_instagram.setIcon(QIcon(join(self.path_icons, "socials/instagram.png")))
+        self.btn_instagram.setIconSize(QSize(35, 35))
 
         # Checkboxes
         self.check_blur_background.stateChanged.connect(self.on_blur_changed)

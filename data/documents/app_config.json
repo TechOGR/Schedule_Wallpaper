@@ -1,6 +1,6 @@
 {
-  "blur": true,
+  "blur": false,
   "trash": true,
   "music": true,
-  "activeWeek": "A"
+  "activeWeek": "B"
 }

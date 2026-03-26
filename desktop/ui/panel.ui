@@ -134,6 +134,12 @@
        <height>80</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: none;
+	background-color: transparent;
+}</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
      </property>
@@ -155,8 +161,19 @@
           <height>30</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <kerning>true</kerning>
+         </font>
+        </property>
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
         </property>
         <property name="text">
          <string/>
@@ -196,6 +213,9 @@
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
+        <property name="toolTip">
+         <string/>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -230,6 +250,9 @@
         </property>
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string/>
         </property>
         <property name="text">
          <string/>
@@ -266,6 +289,9 @@
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
+        <property name="toolTip">
+         <string/>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -300,6 +326,9 @@
         </property>
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string/>
         </property>
         <property name="text">
          <string/>
